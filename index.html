@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SuMail — 메일을 더 똑똑하게</title>
+  <title>SuMail — Smarter email</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="assets/SuMail_biglogo.png">
@@ -45,20 +45,20 @@
         nav_features:"Features", nav_how:"How it works", nav_start:"Start free",
         tagline:"AI email copilot",
         hero_title:"Summaries, tone checks, reply templates.<br/>All in one click.",
-        hero_sub:"Paste or select any email. SuMail summarizes, labels tone, and drafts a reply template. Translation is hidden in English mode.",
+        hero_sub:"Paste or select any email. SuMail summarizes, labels tone, and drafts a reply template for faster replies.",
         cta_primary:"Add to Chrome", cta_secondary:"See features",
         stat_1:"Paste text or use selection", stat_2:"Reply templates: auto or manual", stat_3:"Supported languages (KO/EN)",
         stat2_value:"Auto · Manual",
         features_tag:"Features", features_title:"Everything you need for faster email handling",
-        feat_summary_title:"Summaries & Translate", feat_summary_desc:"Run Korean/English summary or translation with separate buttons. Translate stays hidden in English UI.",
+        feat_summary_title:"Summaries", feat_summary_desc:"Run concise Korean/English summaries from pasted text or selections. Translation controls are available only in the Korean UI.",
         feat_emotion_title:"Tone analysis", feat_emotion_desc:"Returns the single dominant tone with a one-line rationale. No confidence scores.",
         feat_template_title:"Reply templates", feat_template_desc:"Auto/manual English reply drafts from summaries. Off-topic custom prompts are blocked.",
-        feat_context_title:"Context menu", feat_context_desc:"Right-click to summarize/translate selections; popup opens automatically.",
-        feat_theme_title:"Theme & language", feat_theme_desc:"Light/dark and UI language toggle. Translate button is hidden in English.",
-        feat_state_title:"State saving", feat_state_desc:"Inputs, summaries, tone, translation, templates stay saved even if popup closes.",
+        feat_context_title:"Context menu", feat_context_desc:"Right-click to summarize selections; popup opens automatically.",
+        feat_theme_title:"Theme & language", feat_theme_desc:"Light/dark and UI language toggle. Translation is omitted in English mode.",
+        feat_state_title:"State saving", feat_state_desc:"Inputs, summaries, tone, and templates stay saved even if the popup closes.",
         flow_tag:"Workflow", flow_title:"Email processing in 3 steps",
         flow_step1_title:"Paste or select", flow_step1_desc:"Paste up to 2,000 chars or right-click a selection on the page.",
-        flow_step2_title:"Summarize · Tone · Translate", flow_step2_desc:"Each button runs independently; only the chosen result is shown.",
+        flow_step2_title:"Summarize · Tone", flow_step2_desc:"Each button runs independently; only the chosen result is shown.",
         flow_step3_title:"Copy reply template", flow_step3_desc:"Auto or manual template, then copy to clipboard instantly.",
         preview_summary_title:"Summary", preview_summary_b1:"Compress long emails into 3–5 key bullets", preview_summary_b2:"Surface tasks, owners, and due dates", preview_summary_b3:"Highlight deadlines and schedule info",
         preview_emotion_title:"Tone analysis", preview_emotion_line:"One dominant tone with a concise rationale.",
@@ -80,7 +80,7 @@
     }
 
     window.addEventListener("DOMContentLoaded", ()=>{
-      const saved = localStorage.getItem("siteLang") || "ko";
+      const saved = localStorage.getItem("siteLang") || "en";
       applyLang(saved);
       const toggle = document.getElementById("langToggle");
       if(toggle){
@@ -101,7 +101,7 @@
     <div class="nav-right">
       <a href="#features" class="nav-link" data-i18n="nav_features">기능</a>
       <a href="#flow" class="nav-link" data-i18n="nav_how">사용 방법</a>
-      <button id="langToggle" class="lang-toggle" type="button">EN</button>
+      <button id="langToggle" class="lang-toggle" type="button">KO</button>
       <a href="#cta" class="nav-btn" data-i18n="nav_start">무료로 시작</a>
     </div>
   </header>
